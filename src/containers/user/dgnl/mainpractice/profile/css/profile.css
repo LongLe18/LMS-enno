@@ -1,0 +1,345 @@
+@import 'assets/demo/exam.css';
+
+.list-exam-box-archive {
+  min-height: 100vh;
+  background: #fff;
+  padding-top: 1.5em;
+}
+
+.news-banner img {
+  width: 100%;
+}
+
+.list-exam-box-archive .list-news-bg {
+  background-color: #fff;
+  border: 1px solid#ccc;
+  border-radius: 20px;
+  padding: 20px 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.list-exam-box-archive .the-date {
+  clear: both;
+  float: none;
+  border-bottom: 2px solid #ccc;
+  min-height: 45px;
+  margin-bottom: 20px;
+  color: #828282;
+}
+
+.list-exam-box-archive .archive-title {
+  margin: 0 0px 10px 0;
+  text-align: center;
+}
+
+.list-exam-box-archive .the-time {
+  float: left;
+  margin-right: 15px;
+}
+
+.list-exam-box-archive .the-flag {
+  float: left;
+}
+
+.list-exam-box-archive .image-box {
+  max-height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.list-exam-box-archive .image-box img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.list-exam-box-archive .list-news-title-archive {
+  line-height: 1.2;
+  height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.list-exam-box-archive .news-description {
+  height: 130px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.list-exam-box-archive .list-news-title-archive a {
+  text-transform: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.list-exam-box-archive .list-news-title-archive a:hover {
+  color: #3da844;
+}
+
+.list-exam-box-archive .list-author-archive {
+  clear: both;
+  float: none;
+  color: #828282;
+  width: 100%;
+  min-height: 25px;
+  display: inline-block;
+}
+
+.list-exam-box-archive .author {
+  float: left;
+  margin-right: 5px;
+}
+
+.list-exam-box-archive .author span {
+  color: #3da844;
+}
+
+.list-exam-box-archive .date {
+  float: left;
+  margin-right: 10px;
+}
+
+.list-exam-box-archive .watched {
+  float: left;
+  margin-right: 10px;
+}
+
+.list-exam-box-archive .category-right-archive {
+  margin-bottom: 30px;
+}
+
+.list-exam-box-archive .category-right-title-archive {
+  color: #3da844;
+  margin: 0 0px 0px 0;
+}
+
+.list-exam-box-archive .content-category-archive ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list-exam-box-archive .content-category-archive ul li {
+  list-style: none;
+  padding: 5px 0;
+  font-size: 1.4em;
+  color: #333333;
+}
+
+.list-exam-box-archive .content-category-archive ul > li + li {
+  border-top: 1px solid #ccc;
+}
+
+.list-exam-box-archive .content-category-archive ul li a {
+  color: #333333;
+}
+
+.list-exam-box-archive .content-category-archive ul li a:hover {
+  color: #3da844;
+  text-decoration: underline;
+}
+
+.list-exam-box-archive .ant-tabs-nav-list {
+  width: 100%;
+}
+
+.list-exam-box-archive .ant-tabs-tab {
+  width: 50%;
+  padding-bottom: 5px;
+}
+
+.list-exam-box-archive .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0;
+}
+
+.list-exam-box-archive .ant-tabs-tab-btn {
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1b3043;
+}
+
+.list-exam-box-archive .ant-tabs {
+  color: #828282;
+}
+
+.list-exam-box-archive .ant-tabs-tab:hover {
+  color: #828282 !important;
+}
+
+.list-exam-box-archive .ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: 2px solid #d1d1d1;
+}
+
+.list-exam-box-archive .ant-tabs-top > .ant-tabs-nav {
+  margin: 0 0 15px 0;
+}
+
+.list-exam-box-archive .ant-tabs-tabpane img {
+  width: 100%;
+}
+
+.list-exam-box-archive .content-tab-category-archive {
+  margin: 10px 0 25px 0;
+}
+
+.list-exam-box-archive .content-tab-category-archive ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list-exam-box-archive .content-tab-category-archive ul li {
+  list-style: none;
+  padding: 5px 0;
+  font-size: 1.4em;
+}
+
+.list-exam-box-archive .content-tab-category-archive ul > li + li {
+  border-top: 1px solid #ccc;
+}
+
+.list-exam-box-archive .content-tab-category-archive ul li a {
+  color: #333333;
+}
+
+.list-exam-box-archive .content-tab-category-archive ul li a:hover {
+  color: #3da844;
+}
+
+.list-exam-box-archive .ant-tabs-ink-bar {
+  background: #3da844;
+}
+
+.info-course {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.info-course .info {
+  width: 68%;
+  margin: auto;
+  text-align: center;
+}
+.info-course .info p {
+  margin: 0;
+  padding: 0;
+}
+.exam-heading {
+  background: #dfe8f4;
+  font-weight: bold;
+}
+
+.exam-heading h2 {
+  font-size: 16px;
+  color: #0043a8;
+  padding: 8px 15px;
+}
+
+.list-exam-box-archive .list-exam-box .ant-card-body {
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+}
+
+.list-exam-box-archive .list-exam-box .box-image {
+  flex-basis: 30%;
+}
+
+.list-exam-box-archive .list-exam-box .box-text {
+  flex-basis: 70%;
+  padding-left: 10px;
+}
+
+.list-exam-box-archive .list-exam-box .box-text .list-exam-title-archive {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  height: 28px;
+  overflow: hidden;
+  color: #000;
+  line-height: 1.5em;
+  height: 3em;
+  width: 100%;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list-exam-box-archive .list-exam-box .box-text .list-exam-title-archive a {
+  color: #000;
+}
+
+.list-exam-box-archive .list-exam-box .box-text .list-exam-title-archive:hover a {
+  color: #faad14;
+}
+
+.chart-history-practice-left-info div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.chart-history-practice-left-info div p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pie-chart, .chart-history-practice-2 {
+  position: relative;
+  height: 100%;
+  margin: auto;
+}
+
+.chart-history-practice-2 {
+  height: 40vh;
+}
+
+.full-width {
+  font-size: 18px;
+  width: 100%;
+}
+/*tablet pro*/
+
+@media only screen and (max-width: 1080px) {
+  .info-course .info {
+    width: 100%;
+  }
+  .list-exam-box-archive {
+    padding: 0px 15px;
+  }
+
+  .list-exam-box-archive .list-news-bg {
+    margin-top: 30px;
+  }
+
+  .list-exam-box-archive .list-news-bg {
+    padding: 30px;
+  }
+
+  .list-exam-box-archive .category-right-title-archive {
+    margin: 0;
+  }
+
+  .list-exam-box-archive h1 {
+    line-height: 1em;
+  }
+}
+
+/*tablet*/
+
+@media only screen and (max-width: 680px) {
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 480px) {
+  /* .pie-chart {
+    display: none;
+  } */
+}

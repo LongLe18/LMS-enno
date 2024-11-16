@@ -1,0 +1,171 @@
+.payment {
+    width: 100%;
+}
+
+.payment .payment-title {
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #0384e4;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 10px;
+}
+
+.header-payment {
+    border-top-left-radius: 6px;
+    background: #0384e4;
+    margin-top: 10px;
+    padding: 10px;
+    border-top-right-radius: 6px;
+    color: white;
+    font-size: 18px;
+}
+
+.detail-payment {
+    border-top-left-radius: 6px;
+    background: #828383;
+    margin-top: 10px;
+    padding: 10px;
+    border-top-right-radius: 6px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.detail-label, .detail-value {
+    flex-direction: column;
+    display: flex;
+}
+
+.detail-label span, .detail-value span {
+    padding: 12px 5px 12px 12px;
+    font-size: 18px;
+    border-bottom: 1px solid #ececec;
+}
+
+.detail-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-footer a {
+    margin-top: 10px;
+}
+
+.body-payment {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0384e4;
+}
+
+.receipt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.receipt-detail {
+    display: flex;
+    justify-content: center;
+}
+
+.ant-card-head-title {
+    color: #219653;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f0fff7;
+}
+
+.ant-card-bofy {
+    display: flex;
+    justify-content: center;
+}
+
+.options-payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.option-payment {
+    font-size: 16px;
+    padding: 8px 0;
+} 
+
+.confirm-option {
+    height: 48px;
+    width: 80%;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.companypaymentinfo__content {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+.companypaymentinfo__content .company-logo {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.methodLogo {
+    height: 36px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.methodLogo.active {
+    border: 1px solid #2f80ed;
+}
+
+.companypaymentinfo__content label.row {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.companypaymentinfo__content label.row>strong.left {
+    color: #666;
+    width: 30%;
+}
+
+.companypaymentinfo__content label strong {
+    font-weight: 400;
+}
+
+.content-receipt {
+    width: 60%;
+    text-align: center;
+}
+/*mobile*/
+
+@media screen and (max-width: 46.1875em) {
+    .payment__mobile {
+        display: block;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .title-payment__mobile {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .content-receipt {
+        width: 100%;
+    }
+    .companypaymentinfo__content label.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .companypaymentinfo__content label.row>strong.left {
+        width: 50%;
+        text-align: left;
+    }
+    .companypaymentinfo__content label.row>span.right {
+        font-weight: bolder;
+    }
+}

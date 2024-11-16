@@ -1,0 +1,24 @@
+h1 {
+  font-size: 2em;
+}
+
+.header-exam {
+  background-image: linear-gradient(#fff, #f2f5f9);
+  text-align: center;
+  padding: 2.5em 0 1em 0;
+}
+
+.header-exam h1, h4 {
+  color: green;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info {
+  background-color: #fff;
+}
+
+.info > p {
+  font-weight: 500;
+}

@@ -1,0 +1,165 @@
+@import 'assets/demo/exam.css';
+
+.news-banner img {
+  width: 100%;
+}
+
+.list-news-box-single {
+  min-height: 100vh;
+  background: #f5f5f5;
+  /* padding-top: 1.5em; */
+}
+
+.list-news-box-single .content-single {
+  font-size: 18px;
+}
+
+.content-page {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.exam-info {
+  max-width: 80%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-top: unset;
+  padding: 0 15px 15px;
+  border-radius: 6px;
+}
+
+.summury-info {
+  background: #458ce4;
+  color: #fff;
+  padding: 6px 0 4px;
+  font-weight: 700;
+  margin: 0 -15px 15px;
+  border-radius: 6px 6px 0 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.size-18 {
+  font-size: 18px;
+}
+
+.summury-info .orange-color {
+  color: #f1a65b;
+}
+
+.block-action {
+  margin-top: -25px;
+}
+
+.block-action .join-exam-button {
+  background: #f96935;
+  color: #fff;
+  /* margin-left: 10px; */
+}
+
+.block-action .select-form {
+  margin-right: 10px;
+}
+
+.block-action .dowload-exam-button {
+  margin-left: 10px;
+}
+
+.post-module .list-news-bg {
+  background-color: #f5f5f5;
+  border: 1px solid #00bb12;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  padding: 20px 40px;
+}
+
+.post-module .list-author-single {
+  border-bottom: 1px solid #e7dcdd;
+  clear: both;
+  color: #828282;
+  float: none;
+  margin-bottom: 20px;
+  min-height: 45px;
+}
+
+.post-module .author {
+  float: left;
+  margin-right: 5px;
+}
+
+.post-module .author span {
+  color: #3da844;
+}
+
+.post-module .date, .post-module .watched {
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 10px;
+}
+
+.title-section .detail-title-section {
+  border-radius: 6px;
+  margin: 12px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.title-section .section-0 {
+  background: rgb(244, 238, 0);
+  border-color: rgb(244, 238, 0);
+  text-align: center;
+  font-weight: 700;
+  color: red;
+  text-transform: uppercase;
+}
+
+.title-section .section-1 {
+  background: rgb(55, 155, 255);
+  border-color: rgb(55, 155, 255);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.title-section .section-2 {
+  background: rgb(255, 47, 47);
+  border-color: rgb(255, 47, 47);
+  text-align: center;
+  font-weight: 700;
+  color: rgb(255, 255, 0);
+  text-transform: uppercase;
+}
+
+.title-section .section-sum {
+  text-transform: uppercase;
+  color: #fff;
+  background: #cd7742;
+  font-weight: 700;
+  text-align: center;
+  border-color: #cd7742;
+}
+
+@media only screen and (max-width: 480px) {
+  .post-module .list-author-single {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exam-info {
+    max-width: 100%;
+  }
+
+  .text-center {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dowload-exam-button {
+    margin-top: 10px !important;
+  }
+}

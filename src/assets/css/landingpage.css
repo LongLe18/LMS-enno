@@ -1,0 +1,46 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-landingPage{
+  padding: 0 20px;
+  background-color: #fff;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.nav-landingPage .main-menu .ant-space {
+    gap: 1.5rem !important;
+}
+
+.nav-landingPage .main-menu a{
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-row button  {
+    border-radius: 12px;
+    height: 33px;
+    width: 117px;
+}
+
+.button-row #login {
+    background-color: #DBEAFE;
+    color: #3B82F6
+}
+
+.button-row button span {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  header .nav-landingPage {
+    display: none !important;
+  }
+}

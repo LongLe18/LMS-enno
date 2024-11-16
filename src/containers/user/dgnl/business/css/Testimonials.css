@@ -1,0 +1,344 @@
+.list-our-team {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+
+.list-our-team .list-our-team-title {
+  text-align: center;
+  color: #000;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 60px;
+}
+
+.list-our-team .list-our-team-title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 5px;
+  background-color: #ff5520;
+  margin: auto;
+  border-radius: 40px;
+}
+
+.list-our-team .our-team-title {
+  margin-bottom: 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.list-our-team .our-team-title a {
+  color: #387db9;
+}
+
+.list-our-team .our-team-title a:hover {
+  color: #325f86;
+}
+
+.list-our-team .our-team-office {
+  text-align: center;
+}
+
+.list-our-team .our-team-description {
+  text-align: center;
+  height: 105px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.list-our-team .image-box img {
+  width: 70%;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.main-section {
+  background: transparent;
+  /* border: solid 1px green; */
+  border-top: none;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.header-section {
+  background: rgb(24, 98, 24);
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  /* margin-top: 30px; */
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+
+}
+
+.section-title b {
+  display: block;
+  -ms-flex: 1;
+  flex: 1;
+  height: 2px;
+  background-color: rgb(40, 156, 40);
+}
+
+.section-title-main {
+  margin: 12px 15px 12px 15px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list-testimonials .our-team-box {
+  margin-top: 15px;
+  padding: 13px 15px 15px 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  margin-bottom: 30px;
+}
+
+.list-testimonials .talk-about-items {
+  text-align: left;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.list-testimonials .image-box {
+  flex: 0 0 auto;
+  margin-bottom: 0;
+  width: 150px;
+}
+
+.list-testimonials .image-box img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.list-testimonials .star-rating {
+  text-align: left;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 0;
+  margin: 0.5em 0;
+  font-family: 'fl-icons' !important;
+  font-weight: normal !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.list-testimonials .star-rating .anticon {
+  font-size: 20px;
+  color: #ff9c00;
+}
+
+.list-testimonials .star-rating {
+  width: 100%;
+  padding: 0px 0;
+}
+
+.list-testimonials .box-text-right {
+  width: 50%;
+}
+
+.list-testimonials .box-text-right p {
+  font-weight: bold;
+  font-style: italic;
+  height: 90px;
+  overflow: hidden;
+}
+
+.list-testimonials .student-name {
+  flex-direction: row;
+  display: flex;
+}
+
+.list-testimonials .student-name .bold-name {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.list-testimonials .our-team-row {
+  padding: 30px;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:hover {
+  left: -60px;
+  z-index: 2;
+  color: #666;
+  font-size: 30px;
+  height: 30px;
+}
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:hover {
+  right: -60px;
+  z-index: 2;
+  color: #666;
+  font-size: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .wraper-list-our-team {
+    padding: 0 15px;
+  }
+
+  .list-our-team .list-our-team-title {
+    margin-bottom: 30px;
+  }
+
+  .list-our-team .image-box img {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .list-our-team .our-team-office {
+    margin-bottom: 10px;
+  }
+}
+
+.trang-chu .intro-trang-chu {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: solid 1px green;
+}
+
+.trang-chu .intro-trang-chu img {
+  width: 150px;
+  height: 150px;
+}
+
+.trang-chu .intro-trang-chu .descripion-intro {
+  margin-left: 24px;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.trang-chu .descripion-intro .descripion {
+  margin: 8px 0px;
+  color: #5c5959;
+}
+
+.trang-chu .descripion-intro button {
+  width: 80%;
+  background: rgb(250,143,3);
+  background: linear-gradient(90deg, rgba(250,143,3,1) 0%, rgba(251,177,2,1) 39%, rgba(255,175,0,1) 100%);
+  border-image-source: linear-gradient(90deg, rgba(250,143,3,1) 0%, rgba(251,177,2,1) 39%, rgba(255,175,0,1) 100%);
+}
+
+.trang-chu .try-exam {
+  border-radius: 10px;
+  background-color: transparent;
+  background-image: radial-gradient(at center center, #059E00 0%, #035700 100%);
+  display: flex;
+  padding: 48px;
+}
+
+.trang-chu .try-exam .try-exam-description {
+  width: 60%;
+  margin-right: 12px;
+}
+
+.trang-chu .try-exam .try-exam-description h5 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.description-course {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description-course .description-course-item {
+  width: 60%;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  text-align: center;
+  color: rgb(168, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+  background: rgb(255, 255, 229);
+  padding: 12px;
+  border: 1px solid rgb(228, 108, 10);
+}
+
+@media only screen and (max-width: 680px) {
+  .list-our-team .image-box img {
+    width: 40%;
+  }
+
+  .trang-chu .intro-trang-chu {
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    padding: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: solid 1px green;
+    
+  }
+
+  .trang-chu .intro-trang-chu img {
+    width: 80%;
+  }
+  
+  .trang-chu .intro-trang-chu .descripion-intro {
+    margin-left: 24px;
+    display: flex !important;
+    flex-direction: column;
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .trang-chu .intro-trang-chu .descripion-intro .descripion {
+    margin: 8px 0px;
+    color: #5c5959;
+  }
+
+  .trang-chu .intro-trang-chu .descripion-intro button {
+    width: 80%;
+    background: rgb(250,143,3);
+    background: linear-gradient(90deg, rgba(250,143,3,1) 0%, rgba(251,177,2,1) 39%, rgba(255,175,0,1) 100%);
+    border-image-source: linear-gradient(90deg, rgba(250,143,3,1) 0%, rgba(251,177,2,1) 39%, rgba(255,175,0,1) 100%);
+  }
+
+  .description-course .description-course-ite{
+    width: 100%;
+  }
+  
+  .header-section {
+    flex-direction: column;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+}

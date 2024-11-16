@@ -1,0 +1,16 @@
+#boxCaptcha{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: red 2px solid;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px grey;
+    text-decoration: line-through;
+    font-weight: 400;
+    font-style: italic;
+    font-size: x-large;
+    user-select: none;
+}
+
+.inline{
+    display:inline-block;
+}

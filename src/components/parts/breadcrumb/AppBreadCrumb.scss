@@ -1,0 +1,40 @@
+.cra-breadcrumb {
+  background-color: #e5f4f9;
+  padding: 13px 0;
+  a {
+    color: #000 !important;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  span {
+    color: #444;
+    font-size: 15px;
+    &:last-child {
+      a {
+        color: #000;
+      }
+    }
+  }
+  .anticon {
+    color: #000;
+    font-size: 20px;
+  }
+}
+
+.wraper {
+  margin: auto;
+  max-width: 1400px;
+}
+
+@media screen and (max-width: 46.1875em) {
+  .cra-breadcrumb {
+    padding: 13px 13px 5px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1700px) {
+  .wraper {
+    margin: auto;
+    max-width: 1100px;
+  }
+}

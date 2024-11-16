@@ -1,0 +1,134 @@
+.exam-page {
+    position: relative;
+  }
+
+  .ant-steps-item-title::after {
+    background-color: #8c8686 !important;
+  }
+
+  .exam-page .app-main {
+    padding: 0;
+    padding-top: 25px;
+  }
+  
+  .exam-page .ant-tabs-nav, .ant-tabs-nav {
+    display: none;
+  }
+  
+  .exam-page .ant-steps {
+    max-width: 60%;
+    margin: auto;
+  }
+  
+  .exam-page .question-content {
+    height: 735px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .exam-page .body-content.ant-col {
+    background: #fff !important;
+    min-height: calc(100vh - 120px);
+    overflow: scroll;
+  }
+  
+  .open-editor .ant-col {
+    position: static;
+  }
+  
+  .open-editor .ant-row {
+    position: static;
+  }
+  
+  .open-editor .ant-form-item-control-input {
+    position: static;
+  }
+  
+  .footer-exam {
+    position: fixed;
+    background: #fff;
+    z-index: 999;
+    left: 264px;
+    right: 18px;
+    height: 50px;
+    bottom: 0;
+    border-top: 6px solid #f1f1f1;
+  }
+  
+  .footer-exam .footer-action {
+    text-align: right;
+    padding: 3px 0px 0px 0px;
+  }
+  
+  .footer-exam .footer-action button {
+    margin-right: 18px;
+  }
+  
+  .exam-page .question-list {
+    height: 735px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .question-items .item {
+    background-color: #fff;
+    border: 1px solid #dfd4ff;
+    min-height: 72px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .question-items .item .anticon-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 999;
+    color: red;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .question-items .item.active {
+    background-color: #f8f8f8;
+    border: 1px solid #1890ff;
+  }
+  
+  .question-items .item .header-question {
+    font-weight: bold;
+  }
+  
+  .question-items .item .header-question .point {
+    color: #990000;
+    font-weight: lighter;
+  }
+  
+  .question-items .item .body-question {
+    display: flex;
+  }
+  
+  .question-items .item .body-question .answer-detail {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer-question {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-question button {
+    margin: 3px 6px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .exam-page .question-content {
+      height: 430px;
+    }
+  
+    .exam-page .question-list {
+      height: 430px;
+    }
+  }

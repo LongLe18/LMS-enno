@@ -1,0 +1,6 @@
+.modal-exceprt {
+    .ant-modal-body {
+        overflow-y: scroll;
+        height: 600px;
+    }
+}

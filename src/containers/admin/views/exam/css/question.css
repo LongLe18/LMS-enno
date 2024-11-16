@@ -1,0 +1,26 @@
+.question-list {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.question-list .title-exam div {
+  display: inline-block;
+  text-align: left !important;
+}
+  
+.question-list .title-exam {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.ant-modal-confirm-body {
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

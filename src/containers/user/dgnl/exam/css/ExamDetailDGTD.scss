@@ -1,0 +1,89 @@
+.header-dgtd {
+    background: #F5F5F5;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.body-dgtd {
+    margin: 0px 16px 16px 16px;
+    overflow: initial;
+}
+
+.body-dgtd .ant-card-head-title {
+    background-color: transparent;
+    color: #000;
+    font-size: 16px;
+}
+
+.a-tag {
+    font-size: 16px;
+    color: #757677;
+    background: #f0efef;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 54% !important;
+    text-align: center;
+    border: 1px solid #fff;   
+}
+
+.selected {
+    background: rgb(24, 144, 255);
+    color: #fff;
+}
+
+.marked {
+    border-color: #ff6a00;
+}
+
+.list-question-side {
+    background: #fff;
+    text-align: 'center';
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.list-question-side .list-question-area {
+    margin: 12px;
+    padding: 16px;
+    border: 1px solid #f0efef;
+}
+
+.btn-chinh {
+    background: rgb(24, 144, 255);
+    border-color: rgb(24, 144, 255);
+    border-radius: 20px;
+}
+
+.solution {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 20px;
+    user-select: none;
+}
+
+.list-item .solution-fill-item {
+    margin: 10px 5px;
+}
+
+.paragraph-components>.solution-fill-item:hover {
+    background: #d2e9c3 !important;
+    border: 1px solid #44a500 !important;
+}
+
+.solution-fill-item {
+    display: inline-block;
+    padding: 0 10px;
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+    text-align: center;
+    background: #f1ead9;
+    line-height: 27px;
+    cursor: pointer;
+    vertical-align: bottom;
+    vertical-align: baseline;
+    margin-right: 5px !important;
+    margin: 0 5px;
+}

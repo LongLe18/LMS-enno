@@ -1,0 +1,159 @@
+@import '~antd/dist/antd.css';
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url(../fonts/sourcesan/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+  font-family: 'SourceSansLightPro';
+  src: url(../fonts/sourcesan/SourceSansPro-Light.otf);
+}
+
+@font-face {
+  font-family: 'SourceSansBoldPro';
+  src: url(../fonts/sourcesan/SourceSansPro-Bold.otf);
+}
+
+body {
+  font-family: 'SourceSansPro' !important;
+  font-weight: normal;
+  font-size: 15px;
+  min-height: 100vh;
+  letter-spacing: 0.6px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.loading-spin {
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+
+.app-auth {
+  /* background: url('../img/bg_main.png') no-repeat; */
+  background: url('../img/auth_bg.jpg') no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  display: block;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.center-buttons {
+  text-align: center;
+}
+
+.app-auth main .ant-row>.ant-col-lg-8 {
+  max-width: 100% !important;
+  margin: auto;
+}
+
+.auth-block {
+  border-radius: 5px;
+  padding: 25px;
+  font-weight: 400;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  margin: 15% 0;
+}
+
+.installer-block {
+  border-radius: 5px;
+  padding: 25px;
+  font-weight: 400;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  margin-top: 10%;
+  width: 640px;
+}
+
+.app-auth {
+  .div-form {
+    display: flex;
+    flex-direction: column;
+    h4 {
+      font-size: 28px;
+      color: #007308eb;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
+.app-auth .logo {
+  text-align: center;
+  padding: 5em;
+}
+
+.app-auth .login-form {
+  border-radius: 5px;
+  padding: 26px 24px 0px;
+  font-weight: 400;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+.app-auth .login-form .active {
+  text-decoration: underline;
+  color: #ff4d4f;
+}
+
+.app-auth .login-form .ant-result {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.app-auth .login-form .login-form-button {
+  float: right;
+  min-width: 120px;
+}
+
+.app-auth .login-form .alert {
+  border-left: 2px solid #00a0d2;
+  padding: 5px 10px;
+}
+
+.social-login {
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.social-login .box {
+  /* padding: 0 10px; */
+  margin-bottom: 10px;
+}
+
+.other-links {
+  padding-top: 10px;
+}
+
+.steps-content {
+  margin: 30px 0px 0px 10px;
+  padding-right: 20px;
+}
+
+.installer-row {
+  height: 0px;
+}
+
+.steps-action {
+  text-align: right;
+}
+
+@media screen and (max-width: 1366px) {
+  .app-auth .logo {
+    padding: 2.2em;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .app-auth .logo {
+    padding: 1.5em;
+  }
+}

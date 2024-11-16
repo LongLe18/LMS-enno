@@ -1,0 +1,12 @@
+.carousel-caption h3 {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.carousel-caption p {
+    font-size: 20px;    
+}
+
+.product-categories::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}

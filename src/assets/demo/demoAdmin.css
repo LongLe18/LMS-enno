@@ -1,0 +1,317 @@
+/*!
+
+=========================================================
+* Paper Dashboard React - v1.3.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/main/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+.white-text {
+  color: #FFFFFF;
+}
+.blue-theme aside.app-sider {
+  background: #2fa2c1;
+}
+
+.sidebar:after {
+  background: #2fa2c1;
+}
+
+.tim-row {
+    margin-bottom: 20px;
+  }
+  
+  .tim-white-buttons {
+    background-color: #777777;
+  }
+  
+  .typography-line {
+    padding-left: 25%;
+    margin-bottom: 35px;
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  
+  .typography-line span {
+    bottom: 10px;
+    color: #c0c1c2;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    left: 0;
+    position: absolute;
+    width: 260px;
+    text-transform: none;
+  }
+  
+  .tim-row {
+    padding-top: 60px;
+  }
+  
+  .tim-row h3 {
+    margin-top: 0;
+  }
+  
+  .offline-doc .page-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .offline-doc .footer {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    bottom: 0;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  @media all and (min-width: 992px) {
+    .sidebar .nav>li.active-pro {
+      position: absolute;
+      width: 100%;
+      bottom: 10px;
+    }
+  }
+  
+  .card.card-upgrade .card-category {
+    max-width: 530px;
+    margin: 0 auto;
+  }
+  
+  /* Nucleo Style */
+  
+  .demo-iconshtml {
+    font-size: 62.5%;
+  }
+  
+  .demo-icons body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #333333;
+    background: white;
+  }
+  
+  .demo-icons a {
+    color: #608CEE;
+    text-decoration: none;
+  }
+  
+  .demo-icons header {
+    text-align: center;
+    padding: 100px 0 0;
+  }
+  
+  .demo-icons header h1 {
+    font-size: 2.8rem;
+  }
+  
+  .demo-icons header p {
+    font-size: 1.4rem;
+    margin-top: 1em;
+  }
+  
+  .demo-icons header a:hover {
+    text-decoration: underline;
+  }
+  
+  .demo-icons .nc-icon {
+    font-size: 34px;
+  }
+  
+  .demo-icons section h2 {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0 0 1em .2em;
+    margin-bottom: 1em;
+  }
+  
+  .demo-icons ul {
+    padding-left: 0;
+  }
+  
+  .demo-icons ul::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .demo-icons ul li {
+    width: 20%;
+    float: left;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: .25em;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+  }
+  
+  .demo-icons ul li:hover {
+    background: #f4f4f4;
+  }
+  
+  .demo-icons ul p,
+  .demo-icons ul em,
+  .demo-icons ul input {
+    display: inline-block;
+    font-size: 1rem;
+    color: #999999;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  
+  .demo-icons ul p {
+    padding: 20px 0 0;
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .demo-icons ul p::selection,
+  .demo-icons ul em::selection {
+    background: #608CEE;
+    color: #efefef;
+  }
+  
+  .demo-icons ul em {
+    font-size: 12px;
+  }
+  
+  .demo-icons ul em::before {
+    content: '[';
+  }
+  
+  .demo-icons ul em::after {
+    content: ']';
+  }
+  
+  .demo-icons ul input {
+    text-align: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    display: none;
+  }
+
+.display {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.nav-class {
+  align-items: center;
+  display: flex !important;
+}
+
+.table-striped-rows tr:nth-child(2n) td {
+  background-color: #eeeaea;
+}
+.table-striped-rows tr td {
+  font-weight: 500;
+}
+
+.table-striped-rows thead {
+  background-color: #b9b9b9;
+}
+
+.cate-form-block form {
+  padding: 16px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.ant-form-item-label > label {
+  font-size: 16px !important;
+}
+
+.table-cates {
+  padding-left: 25px;
+}
+
+.w5d-form .left-content .ant-form-item, .w5d-form .right-content .ant-form-item {
+    margin-bottom: 5px;
+}
+
+.w5d-form .header-form-title {
+  text-transform: capitalize;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.w5d-form .left-content {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.border-box {
+  position: relative;
+  min-width: 255px;
+  border: 1px solid #ccd0d4;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+  background: #fff;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+}
+
+.border-box .ant-form-item {
+  padding: 12px;
+}
+
+.border-box .ant-form-item {
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+
+.right-actions {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.login-form-forgot {
+  color: rgba(0, 115, 8, 0.92);
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  border: none;
+}
+
+thead[class*="ant-table-thead"] th{
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+
+tbody[class*="ant-table-tbody"] td{
+  text-align: center !important;
+}

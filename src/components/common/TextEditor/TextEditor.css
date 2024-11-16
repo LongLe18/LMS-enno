@@ -1,0 +1,273 @@
+.ql-container {
+    font-size: 16px;
+  }
+  
+  .ql-formula {
+    font-size: 22px;
+  }
+  
+  .viewable-editor {
+    color: #7276a7;
+    cursor: pointer;
+    border: 1px solid #dfd4ff;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    padding: 10px 16px;
+    display: flex;
+    min-height: 56px;
+    position: relative;
+  }
+  
+  .viewable-editor.editor-new {
+    background-color: #fff;
+  }
+  
+  .viewable-editor.disabled {
+    background-color: #fff;
+    border-color: #d9d9d9;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 1;
+    color: #777;
+  }
+  
+  .viewable-editor .edit-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .viewable-editor .viewable-content {
+    flex-basis: 98%;
+  }
+  .viewable-editor .viewable-content div{
+    display: inline-block;
+    font-family: KaTeX_Math;
+  }
+  
+  
+  .overlay-editor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background: #fff;
+    z-index: 9999;
+    padding: 5% 15%;
+  }
+  
+  .quill {
+    border: 1px solid #999;
+  }
+  
+  
+  .overlay-editor .ql-editor {
+    min-height: 460px;
+  }
+  
+  .overlay-editor .ql-toolbar.ql-snow+.ql-container.ql-snow {
+    border: 0;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .footer-editor {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .footer-editor button {
+    margin: 5px;
+  }
+  
+  .w5d-modal-math-library {
+    z-index: 999999;
+  }
+  
+  .w5d-modal-math-library .ant-modal {
+    width: 50% !important;
+    padding: 30px;
+  }
+  
+  .math-area {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 15px;
+    background: #fff;
+  }
+  
+  .math-area .ant-tabs-nav {
+    display: block !important;
+  }
+  
+  .math-area .math-item div {
+    display: inline-block;
+    font-family: KaTeX_Math;
+  }
+  
+  .math-options img {
+    width: 56px;
+    height: 50px;
+    margin: 3px;
+  }
+  
+  .math-options img:hover {
+    opacity: 0.6;
+  }
+  
+  .form-math {
+    padding: 0px;
+    display: flex;
+  }
+  
+  .form-math .math-item {
+    /* flex: 1;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    clear: both; */
+
+    width: 100%;
+    margin: 25px 6px;
+    min-height: 50px;
+    border: 1px solid #dfd4ff;
+    padding: 12px;
+    font-size: 24px;
+    border-radius: 10px;
+    background: #f1f1f1;
+  }
+
+  .form-math .math-item .math-item-content {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .form-math .math-item>div {
+    margin-right: 6px;
+  }
+  
+  .form-math textarea {
+    width: 100%;
+    margin: 25px 0;
+    display: block;
+    clear: both;
+    min-height: 150px;
+    border: 1px solid #dfd4ff;
+    padding: 12px;
+    font-size: 24px;
+  }
+  
+  .math-symbols {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-column-gap: 12px;
+    -webkit-column-gap: 12px;
+    column-gap: 12px;
+    grid-row-gap: 12px;
+    row-gap: 12px;
+    box-sizing: border-box;
+    padding: 12px;
+    background: #fff;
+    border-radius: 6px;
+  }
+  
+  .math-symbols li {
+    list-style: none;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 3px 1px #ccc;
+    transition: all 0.2s;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .math-symbols li span {
+    font-size: 22px;
+  }
+  
+  .simple-editor img {
+    max-width: 860px !important;
+  }
+  
+  .text-quill-custom .ql-toolbar {
+    display: none;
+  }
+  
+  .show-toolbar-editor .ql-toolbar {
+    display: block;
+  }
+  
+  .simple-editor .quill,
+  .simple-editor .ql-container {
+    border: 0;
+  }
+  
+  
+  
+  .simple-editor .ql-editor {
+    font-size: 15px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    transition: all 0.3s;
+    min-height: 45px;
+    color: #000;
+    opacity: 1;
+    font-weight: 500;
+    min-height: 56px;
+  }
+  .simple-editor .ql-editor div {
+    /* display: inline-block; */
+    line-height: 180%;
+    font-size: 16px;
+  }
+  
+  .simple-extra-actions {
+    display: flex;
+  }
+  
+  .simple-extra-actions button {
+    padding-left: 0;
+    padding-right: 8px;
+    font-size: 16px;
+    color: #7276a7;
+  }
+  
+  .simple-extra-actions button.active {
+    color: #1890ff;
+    font-weight: bold;
+  }
+  
+  .min-height-200 .ql-editor {
+    min-height: 200px;
+  }
+  
+  .min-height-300 .ql-editor {
+    min-height: 300px;
+  }
+  
+  .min-height-500 .ql-editor {
+    min-height: 500px;
+  }
+  
+  
+  .ant-radio-button-wrapper-disabled.ant-radio-button-wrapper-checked {
+    color: #fff;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    box-shadow: none;
+  }
+  
+  .katex {
+    font-family: KaTeX_Math;
+  }

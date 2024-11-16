@@ -1,0 +1,260 @@
+.ant-layout {
+    background: #F5F5F5;
+  }
+  
+  /*
+      .ts-banner
+  */
+  
+  .ts-banner {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .ts-banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /*
+      .main-intro
+  */
+  .main-intro {
+    background: #fff;
+    font-size: 20px;
+    line-height: 180%;
+    margin-bottom: 45px;
+  }
+  
+  .main-intro .title {
+    text-align: center;
+  }
+  
+  .main-intro .title h3 {
+    text-transform: uppercase;
+    padding: 0 40px;
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+    background: #0f9453 !important;
+    clip-path: unset;
+    border-radius: 0 0 20px 20px;
+    font-size: 33px;
+    height: 56px;
+  }
+  
+  .main-intro .title h3 span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .main-intro .ts-content {
+    padding-top: 45px;
+  }
+  
+  .main-intro .high-light {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 10px 10px 60px;
+    position: relative;
+    margin-top: 45px;
+    border: 1px solid #000;
+    text-align: justify;
+  }
+  
+  .main-intro .high-light span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #000;
+    left: 0;
+    top: -25px;
+  }
+  
+  .main-intro .high-light span strong {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #fff;
+    transition: all 0.7s;
+    cursor: pointer;
+  }
+  
+  .main-intro .high-light:hover span strong {
+    font-size: 34px;
+  }
+  
+  .main-intro .high-light p {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+  }
+  
+  .main-intro .high-light:hover p {
+    letter-spacing: 2px;
+  }
+  
+  .main-intro .high-light .outlines {
+    line-height: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-intro .high-light .outlines li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 6px;
+  }
+  
+  .main-intro .high-light .outlines li::before {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #000;
+    position: absolute;
+    content: '';
+    top: 7px;
+    left: 0;
+    display: block;
+  }
+  
+  .main-intro .high-light .outlines li .space {
+    width: auto;
+    height: auto;
+    display: block;
+    border: none;
+    position: relative;
+    top: auto;
+    padding-left: 27px;
+  }
+  
+  .main-intro .high-light .outlines li .space:before {
+    content: '-';
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+  }
+  
+  .main-intro .ts-objects {
+    border-color: #1c8d79;
+    margin-top: 0;
+  }
+  
+  .main-intro .ts-objects span strong {
+    background: #1c8d79;
+    font-size: 24px;
+  }
+  
+  .main-intro .ts-objects p {
+    color: #1c8d79;
+  }
+  
+  .main-intro .ts-objects .outlines li:before {
+    border-left: 10px solid #1c8d79;
+  }
+  
+  .main-intro .ts-exam-content {
+    border-color: #5f5182;
+  }
+  
+  .main-intro .ts-exam-content span strong {
+    background: #5f5182;
+    font-size: 24px;
+  }
+  
+  .main-intro .ts-exam-content p {
+    color: #5f5182;
+  }
+  
+  .main-intro .ts-exam-content .outlines li:before {
+    border-left: 10px solid #5f5182;
+  }
+  
+  .main-intro .ts-content-detail {
+    border-color: #2f69b3;
+  }
+  
+  .main-intro .ts-content-detail span strong {
+    background: #2f69b3;
+    font-size: 24px;
+  }
+  
+  .main-intro .ts-content-detail p {
+    color: #2f69b3;
+  }
+  
+  .main-intro .ts-content-detail .outlines li:before {
+    border-left: 10px solid #2f69b3;
+  }
+  
+  .main-intro .ts-benefits {
+    border-color: #2f69b3;
+  }
+  
+  .main-intro .ts-benefits span strong {
+    background: #f26d7d;
+    font-size: 24px;
+  }
+  
+  .main-intro .ts-benefits p {
+    color: #f26d7d;
+  }
+  
+  .main-intro .ts-benefits .outlines li:before {
+    border-left: 10px solid #f26d7d;
+  }
+  
+  .main-intro .ts-features {
+    border-color: #fd610c;
+  }
+  
+  .main-intro .ts-features span strong {
+    background: #fd610c;
+    font-size: 24px;
+  }
+  
+  .main-intro .ts-features p {
+    color: #fd610c;
+  }
+  
+  .main-intro .ts-features .outlines li:before {
+    border-left: 10px solid #fd610c;
+  }
+  
+  /*
+      .ts-footer
+  */
+  
+  .ts-footer {
+    background-image: -webkit-linear-gradient(right, #1c8d79, #47d899);
+    padding: 5em;
+  }
+  
+  .ts-footer button {
+    max-width: 400px;
+    margin: auto;
+    display: block;
+  }
+  
+  .menu-course {
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+  .ant-menu-title-content {
+    color: rgb(24, 98, 24);
+    font-weight: 600;
+  }

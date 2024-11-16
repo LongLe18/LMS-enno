@@ -1,0 +1,19 @@
+h4 {
+    font-size: 22px;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.alert-user > .ant-card-body {
+    padding-bottom: 0;
+}
+
+.ant-card-body > h5 {
+    color: rgb(160, 160, 160)
+}
+
+/* .ant-tabs-content-holder {
+    margin-left: 15%;
+} */

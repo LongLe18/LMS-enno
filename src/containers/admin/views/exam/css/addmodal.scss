@@ -1,0 +1,43 @@
+.cra-exam {
+    background: transparent;
+    .cra-not-logged {
+        .cra-exam-buttons {
+            button {
+                margin-left: 15px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.cra-exam-modal-container {
+    .ant-exam-close-x {
+        color: #666;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .cra-exam-modal {
+        .ant-modal-body {
+            .form-title {
+                text-align: center;
+                text-transform: capitalize;
+                margin-bottom: 15px;
+                color: #000;
+                font-family: 'SourceSansBoldPro';
+                font-size: 28px;
+            }
+            
+        }
+        .center-buttons {
+            text-align: center;
+            margin: 0 0 5px 0;
+        }
+        .footer-addExam {
+            text-align: center;
+            button {
+                padding: 3px;
+                font-weight: lighter;
+            }
+        }
+    }
+
+}

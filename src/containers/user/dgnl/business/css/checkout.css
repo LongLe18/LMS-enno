@@ -1,0 +1,29 @@
+.paymentUser {
+    border-radius: 10px;
+    background: #e8e7e7;
+}
+
+.subTitle p{
+    color: black;
+    font-size: 16px;
+}
+
+.subTitle span{
+    font-size: 16px;
+    color: #002aff;
+}
+
+.subTitle p strong{
+    color: rgb(3, 209, 3);
+}
+
+.receiptDetail .row{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.receiptDetail label.row>strong.left {
+    color: #666;
+    width: 50%;
+}
