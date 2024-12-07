@@ -190,15 +190,15 @@ const ExamOnlineDetailDGTD = () => {
                     if (res.data.length > 0) {
                         let temp = [];
                         res.data.map(item => {
-                            if ((item.ket_qua_chon !== null) && (item.ket_qua_chon !== '')) {// Câu trắc nghiệm
-                                temp.push({ cau_hoi_id: item.cau_hoi_id, dap_an: renderAnswerKeyV2(item.ket_qua_chon)[0], 
+                            if ((item?.ket_qua_chon !== null) && (item?.ket_qua_chon !== '')) {// Câu trắc nghiệm
+                                temp.push({ cau_hoi_id: item.cau_hoi_id, dap_an: renderAnswerKeyV2(item?.ket_qua_chon)[0], 
                                     loai_dap_an: true, gia_tri_dap_an: renderAnswerKeyV2(item.ket_qua_chon)[1],
                                     ket_qua_chon: item.ket_qua_chon });
                             }
                             else {// câu tự luận
-                                temp.push({ cau_hoi_id: item.cau_hoi_id, noi_dung: item.noi_dung_tra_loi, 
-                                    loai_dap_an: false, gia_tri_dap_an: item.noi_dung_tra_loi,
-                                    ket_qua_chon: item.noi_dung_tra_lo });
+                                temp.push({ cau_hoi_id: item?.cau_hoi_id, noi_dung: item?.noi_dung_tra_loi, 
+                                    loai_dap_an: false, gia_tri_dap_an: item?.noi_dung_tra_loi,
+                                    ket_qua_chon: item?.noi_dung_tra_lo });
                             }
                             return null;
                         })
@@ -250,12 +250,14 @@ const ExamOnlineDetailDGTD = () => {
         if (document.documentElement.requestFullscreen) {
             document.documentElement.requestFullscreen();
 
-            timerId.current = setInterval(() => {
-                setCountSection((preCount) => preCount - 1);
-            }, 1000);
-            timeCount.current = setInterval(() => {
-                setTimeToDo((preValue) => preValue + 1); // Mỗi lần tăng lên 1 phút
-            }, 60000)
+            if (isDoing) {
+                timerId.current = setInterval(() => {
+                    setCountSection((preCount) => preCount - 1);
+                }, 1000);
+                timeCount.current = setInterval(() => {
+                    setTimeToDo((preValue) => preValue + 1); // Mỗi lần tăng lên 1 phút
+                }, 60000)
+            }
         }
     }
 
@@ -625,7 +627,7 @@ const ExamOnlineDetailDGTD = () => {
                         <span className="right-answer">Đáp án đúng {question?.cau_hoi?.dap_an_dungs?.map((item) => renderAnswerKey(item)).join(', ')}</span>
                         : <span className="right-answer">Đáp án đúng: 
                             <MathJax.Provider>
-                                {question.cau_hoi.dap_ans[0].noi_dung_dap_an.split('\n').map((item, index_cauhoi) => {
+                                {question?.cau_hoi?.dap_ans[0]?.noi_dung_dap_an.split('\n').map((item, index_cauhoi) => {
                                     return (
                                         <div key={index_cauhoi}> 
                                         {
@@ -824,16 +826,16 @@ const ExamOnlineDetailDGTD = () => {
         if (!isDoing && examUser.status === 'success') {
             if (examUser.data.dap_an_da_chons) {
                 let currentSubmitAnswer = examUser.data.dap_an_da_chons.find((item) => (item.cau_hoi_id === question.cau_hoi_id && item.ket_qua_chon !== '0000'));
-                if (question.dap_an_dungs && currentSubmitAnswer !== undefined) {
-                    if (question.loai_cau_hoi === 1 || question.loai_cau_hoi === 2) { // Câu trắc nghiệm
-                        let answerRight = convertAnswer(question.dap_an_dungs);
-                        if (currentSubmitAnswer && answerRight === currentSubmitAnswer.ket_qua_chon) {
+                if (question?.dap_an_dungs && currentSubmitAnswer !== undefined) {
+                    if (question?.loai_cau_hoi === 1 || question?.loai_cau_hoi === 2) { // Câu trắc nghiệm
+                        let answerRight = convertAnswer(question?.dap_an_dungs);
+                        if (currentSubmitAnswer && answerRight === currentSubmitAnswer?.ket_qua_chon) {
                             isRight = 'right-answer';
-                        } else if (currentSubmitAnswer && answerRight !== currentSubmitAnswer.ket_qua_chon) {
+                        } else if (currentSubmitAnswer && answerRight !== currentSubmitAnswer?.ket_qua_chon) {
                             isRight = 'wrong-answer';
                         }
-                    } else if (question.loai_cau_hoi === 0) { // Câu tự luận
-                        if (currentSubmitAnswer && question.dap_ans[0].noi_dung_dap_an
+                    } else if (question?.loai_cau_hoi === 0) { // Câu tự luận
+                        if (currentSubmitAnswer && question?.dap_ans[0]?.noi_dung_dap_an
                             .replaceAll('<b>', '')
                             .replaceAll('</b>', '')
                             .replaceAll('<em>', '')
@@ -844,7 +846,7 @@ const ExamOnlineDetailDGTD = () => {
                             .toLowerCase() === (currentSubmitAnswer.noi_dung_tra_loi).toLowerCase()) 
                         {
                             isRight = 'right-answer';
-                        } else if (currentSubmitAnswer && question.dap_ans[0].noi_dung_dap_an
+                        } else if (currentSubmitAnswer && question?.dap_ans[0]?.noi_dung_dap_an
                             .replaceAll('<b>', '')
                             .replaceAll('</b>', '')
                             .replaceAll('<em>', '')
@@ -891,53 +893,53 @@ const ExamOnlineDetailDGTD = () => {
                 if (question.cau_hoi.loai_cau_hoi === 1) {
                     isAnswered.ket_qua_chon = '0000';
                 }
-                isAnswered.ket_qua_chon = isAnswered.ket_qua_chon.substring(0, index) + (choosed ? '0' : '1') + isAnswered.ket_qua_chon.substring(index + 1); // Thay 1 vào vị trí index của ket_qua
+                isAnswered.ket_qua_chon = isAnswered?.ket_qua_chon.substring(0, index) + (choosed ? '0' : '1') + isAnswered?.ket_qua_chon.substring(index + 1); // Thay 1 vào vị trí index của ket_qua
 
                 let newAnsers2;
-                if (renderAnswerKeyV2(isAnswered.ket_qua_chon)[0].length === 0 && question.cau_hoi.loai_cau_hoi === 1) {
+                if (renderAnswerKeyV2(isAnswered?.ket_qua_chon)[0].length === 0 && question?.cau_hoi?.loai_cau_hoi === 1) {
                     // Xóa phần tử có id tương ứng trong results
-                    newAnsers2 = results.filter(item => item.cau_hoi_id !== question.cau_hoi_id);
+                    newAnsers2 = results.filter(item => item.cau_hoi_id !== question?.cau_hoi_id);
                 } else {
                     const dap_an_ton_tai = results.find((item) => item.cau_hoi_id === question.cau_hoi_id)
                     newAnsers2 = dap_an_ton_tai ? results.map((item) => 
                         (
                             item.cau_hoi_id === question.cau_hoi_id ? { ...item, 
-                            dap_an: renderAnswerKeyV2(isAnswered.ket_qua_chon)[0], 
-                            gia_tri_dap_an: renderAnswerKeyV2(isAnswered.ket_qua_chon)[1], 
+                            dap_an: renderAnswerKeyV2(isAnswered?.ket_qua_chon)[0], 
+                            gia_tri_dap_an: renderAnswerKeyV2(isAnswered?.ket_qua_chon)[1], 
                             loai_dap_an: true,
-                            ket_qua_chon: isAnswered.ket_qua_chon } : item
+                            ket_qua_chon: isAnswered?.ket_qua_chon } : item
                         )
                     )
                     : [
                         ...results, {
-                            cau_hoi_id: question.cau_hoi.cau_hoi_id,
-                            dap_an: renderAnswerKeyV2(isAnswered.ket_qua_chon)[0], 
-                            gia_tri_dap_an: renderAnswerKeyV2(isAnswered.ket_qua_chon)[1], 
+                            cau_hoi_id: question?.cau_hoi?.cau_hoi_id,
+                            dap_an: renderAnswerKeyV2(isAnswered?.ket_qua_chon)[0], 
+                            gia_tri_dap_an: renderAnswerKeyV2(isAnswered?.ket_qua_chon)[1], 
                             loai_dap_an: true,
-                            ket_qua_chon: isAnswered.ket_qua_chon
+                            ket_qua_chon: isAnswered?.ket_qua_chon
                         }
                     ]
                 }
                 setResults(newAnsers2);
                 
                 const submit = {
-                    "ket_qua_chon": isAnswered.ket_qua_chon,
+                    "ket_qua_chon": isAnswered?.ket_qua_chon,
                     "noi_dung_tra_loi": "",
                     "dthv_id": params.idExamUser,
-                    "cau_hoi_id": question.cau_hoi_id
+                    "cau_hoi_id": question?.cau_hoi_id
                 }
-                dispatch(answerActions.editAnswerUser({ id: isAnswered.dadc_id, formData: submit }, (res) => {
+                dispatch(answerActions.editAnswerUser({ id: isAnswered?.dadc_id, formData: submit }, (res) => {
                     if (res.status === 200 && res.statusText === 'OK') setPause(false);
                 }));
             } else {
                 let ket_qua = '0000';
                 ket_qua = ket_qua.substring(0, index) + '1' + ket_qua.substring(index + 1); // Thay 1 vào vị trí index của ket_qua
-                setResults([...results, { cau_hoi_id: question.cau_hoi_id, dap_an: [answerKey], gia_tri_dap_an: [index], loai_dap_an: true, ket_qua_chon: ket_qua }]);
+                setResults([...results, { cau_hoi_id: question?.cau_hoi_id, dap_an: [answerKey], gia_tri_dap_an: [index], loai_dap_an: true, ket_qua_chon: ket_qua }]);
                 
                 let trac_nghiem_submit = [];
                 trac_nghiem_submit.push({
                     "ket_qua":ket_qua,
-                    "cau_hoi_id": question.cau_hoi_id
+                    "cau_hoi_id": question?.cau_hoi_id
                 });
 
                 const submit = {
@@ -971,12 +973,12 @@ const ExamOnlineDetailDGTD = () => {
                                 let temp = [];
                                 res.data.map(item => {
                                     if ((item.ket_qua_chon !== null) && (item.ket_qua_chon !== '')) {// Câu trắc nghiệm
-                                        temp.push({ cau_hoi_id: item.cau_hoi_id, dap_an: renderAnswerKeyV2(item.ket_qua_chon)[0], 
-                                            loai_dap_an: true, gia_tri_dap_an: renderAnswerKeyV2(item.ket_qua_chon)[1] });
+                                        temp.push({ cau_hoi_id: item?.cau_hoi_id, dap_an: renderAnswerKeyV2(item?.ket_qua_chon)[0], 
+                                            loai_dap_an: true, gia_tri_dap_an: renderAnswerKeyV2(item?.ket_qua_chon)[1] });
                                     }
                                     else {// câu tự luận
-                                        temp.push({ cau_hoi_id: item.cau_hoi_id, noi_dung: item.noi_dung_tra_loi, 
-                                            loai_dap_an: false, gia_tri_dap_an: item.noi_dung_tra_loi });
+                                        temp.push({ cau_hoi_id: item?.cau_hoi_id, noi_dung: item?.noi_dung_tra_loi, 
+                                            loai_dap_an: false, gia_tri_dap_an: item?.noi_dung_tra_loi });
                                     }
                                     return null;
                                 })
@@ -1008,7 +1010,7 @@ const ExamOnlineDetailDGTD = () => {
                                             number = number + 1;
                                         } 
                                     } else if (question.cau_hoi.loai_cau_hoi === 0) { // Câu tự luận
-                                        if (currentSubmitAnswer && question.cau_hoi.dap_ans[0].noi_dung_dap_an
+                                        if (currentSubmitAnswer && question?.cau_hoi?.dap_ans[0]?.noi_dung_dap_an
                                             .replaceAll('<b>', '')
                                             .replaceAll('</b>', '')
                                             .replaceAll('<em>', '')
@@ -1267,11 +1269,12 @@ const ExamOnlineDetailDGTD = () => {
             <Spin spinning={loadingExportFile}>  
                 <div className='section-question'>
                     <Row>
-                        <Col span={3} style={{display: course?.data.loai_kct !== 0 ? 'none' : 'block'}}>
+                        {/* <Col span={3} style={{display: course?.data.loai_kct !== 0 ? 'none' : 'block'}}>
                             <img src={require('assets/img/logo/logo-vnu.png').default} width={82}  style={{marginLeft: 12}} alt="logo-vnu"/>
                             <img src={require('assets/img/logo/Logo-DGNT.png').default} width={82}  style={{marginLeft: 12}} alt="logo-DGNT"/>
-                        </Col>
-                        <Col span={course?.data.loai_kct !== 0 ? 24 : 21}>
+                        </Col> */}
+                        {/* <Col span={course?.data.loai_kct !== 0 ? 24 : 21}> */}
+                        <Col span={24}>
                             <Row justify={'space-between'} style={{marginBottom: 12}}>
                                 <Col style={{fontSize: 24, color: 'rgb(255, 48, 7)'}}>{getCurrentDate()}</Col>
                                 {course?.data.loai_kct !== 0 ? 
@@ -1378,7 +1381,7 @@ const ExamOnlineDetailDGTD = () => {
                                                                                 number = number + 1;
                                                                             } 
                                                                         } else { // Câu tự luận
-                                                                            if (currentSubmitAnswer && question.cau_hoi.dap_ans[0].noi_dung_dap_an
+                                                                            if (currentSubmitAnswer && question?.cau_hoi?.dap_ans[0]?.noi_dung_dap_an
                                                                                 .replaceAll('<b>', '')
                                                                                 .replaceAll('</b>', '')
                                                                                 .replaceAll('<em>', '')
@@ -1455,7 +1458,7 @@ const ExamOnlineDetailDGTD = () => {
                                                                                 number = number + 1;
                                                                             } 
                                                                         } else { // Câu tự luận
-                                                                            if (currentSubmitAnswer && question.cau_hoi.dap_ans[0].noi_dung_dap_an
+                                                                            if (currentSubmitAnswer && question?.cau_hoi?.dap_ans[0]?.noi_dung_dap_an
                                                                                 .replaceAll('<b>', '')
                                                                                 .replaceAll('</b>', '')
                                                                                 .replaceAll('<em>', '')
@@ -1517,7 +1520,7 @@ const ExamOnlineDetailDGTD = () => {
                                                                                 number = number + 1;
                                                                             } 
                                                                         } else { // Câu tự luận
-                                                                            if (currentSubmitAnswer && question.cau_hoi.dap_ans[0].noi_dung_dap_an
+                                                                            if (currentSubmitAnswer && question?.cau_hoi?.dap_ans[0]?.noi_dung_dap_an
                                                                                 .replaceAll('<b>', '')
                                                                                 .replaceAll('</b>', '')
                                                                                 .replaceAll('<em>', '')
